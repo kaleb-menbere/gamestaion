@@ -1,0 +1,69 @@
+import "./Kidopia.css";
+import Header from "./Header/Header";
+import LoginHeader from "./LoginHeader/LoginHeader"; 
+import TermsHeader from "./TermsHeader/TermsHeader";
+
+import Home from "./Home/Home";
+import Footer from "./Footer/Footer";
+import Login from "./Login/Login";
+import Category from "./Category/Category";
+import TermsAndConditions from "./TermsAndConditions/TermsAndConditions";
+import MyAccount from "./MyAccount/MyAccount";
+import ProtectedRoute from "./ProtectedRoute";
+import { Routes, Route, useLocation } from "react-router-dom"; 
+import { LanguageProvider } from "../contexts/LanguageContext";
+import { useAuth } from "../contexts/AuthContext";
+import About from "./About/About";
+
+function Kidopia() {
+  const location = useLocation(); 
+  const { isAuthenticated } = useAuth();
+
+  const isLoginPage = location.pathname === '/login';
+  const isTermsPage = location.pathname === '/terms';
+  const usesFixedHeader = !isLoginPage && !(isTermsPage && !isAuthenticated);
+
+  return (
+    <div>
+      <LanguageProvider>
+        {isLoginPage
+          ? <LoginHeader />
+          : isTermsPage
+            ? (isAuthenticated ? <Header /> : <TermsHeader />)
+            : <Header />}
+      
+        <main className={usesFixedHeader ? 'page-main has-fixed-header' : 'page-main'}>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/terms" element={<TermsAndConditions />} />
+            <Route path="/" element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            } />
+            <Route path="/category/:categoryName" element={
+              <ProtectedRoute>
+                <Category />
+              </ProtectedRoute>
+            } />
+            <Route path="/my-account" element={
+              <ProtectedRoute>
+                <MyAccount />
+              </ProtectedRoute>
+            } />
+            <Route path="/about" element={
+              <ProtectedRoute>
+                <About />
+              </ProtectedRoute>
+            } />
+          </Routes>
+        </main>
+        
+        
+        <Footer />
+      </LanguageProvider>
+    </div>
+  )
+}
+
+export default Kidopia;

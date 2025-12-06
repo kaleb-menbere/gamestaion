@@ -1,0 +1,30 @@
+/* Kidopia.css */
+.kidopia-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+
+/* Optional: Add some spacing between components if needed */
+.kidopia-container > *:not(:last-child) {
+  margin-bottom: 0; /* Adjust as needed */
+}
+
+/* Reset default margins and padding for consistency */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Adjust as needed */
+  width: 100%;
+}
+
+/* Main layout area */
+.page-main {
+  width: 100%;
+  min-height: 100%;
+}
+
+

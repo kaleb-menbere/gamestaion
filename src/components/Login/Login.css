@@ -1,0 +1,478 @@
+/* Kidopia Login Specific Styles */
+.kidopia-login-page {
+  --primary-green: #1E90FF;
+  --green-dark: #1E90FF;
+  --green-light: #a5d66d;
+  --white: #ffffff;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --radius: 12px;
+  --radius-large: 20px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.kidopia-container {
+  max-width: 1300px;
+  margin: 0 auto; 
+  padding: 0 10px;
+  width: 100%;
+}
+
+/* ===== Hero Section ===== */
+.kidopia-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #1E90FF;
+}
+
+.kidopia-hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
+  width: 100%;
+  background-color: #1E90FF;
+}
+
+.kidopia-hero-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(15px, 2vw, 30px);
+  position: relative;
+  background-color: #1E90FF;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0px,
+    rgba(255, 255, 255, 0.1) 6px,
+    rgba(255, 255, 255, 0) 6px,
+    rgba(255, 255, 255, 0) 16px
+  );
+}
+
+.kidopia-hero-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--radius-large);
+}
+
+.kidopia-hero-left img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 36px rgba(0, 0, 0, 0.3));
+  position: relative;
+  z-index: 1;
+  animation: kidopia-float 6s ease-in-out infinite;
+}
+
+@keyframes kidopia-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* ===== Card Styles ===== */
+.kidopia-card {
+  border: 2px solid white;
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 500px;
+  width: 100%;
+  margin: 10px auto;
+  box-shadow: var(--shadow-hover);
+  transition: transform 0.3s ease;
+}
+
+.kidopia-card:hover {
+  transform: translateY(-5px);
+}
+
+.kidopia-card-header {
+  background: #1E90FF;
+  color: var(--white);
+  font-size: clamp(20px, 2.6vw, 24px);
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+}
+
+.kidopia-card-inner {
+  background: var(--white);
+  padding: clamp(24px, 3vw, 32px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 2.6vw, 20px);
+}
+
+/* ===== Login Container ===== */
+.kidopia-login-container {
+  width: 100%;
+  text-align: Left;
+  padding: 0 auto;
+}
+
+.kidopia-login-container h2 {
+  font-size: clamp(24px, 3vw, 28px);
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+  text-align: left;
+}
+
+.kidopia-login-container p {
+  font-size: clamp(14px, 1.6vw, 16px);
+  color: black;
+  margin-bottom: 4px;
+  line-height: 1.5;
+  text-align: left;
+}
+.subscription-list{
+  display: inline;
+  margin: 3em;
+}
+.subscription-list li{
+  text-align: left;
+  margin-left: 5%;
+  font-size: clamp(13px, 1.2vw, 15px);
+}
+.kidopia-error {
+  background: #fee;
+  color: #d32f2f;
+  border: 1px solid #f5c6cb;
+}
+/* ===== Form Elements ===== */
+.kidopia-input-group,
+.kidopia-otp-wrap {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--primary-green);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  padding: 10px 16px;
+  background: var(--white);
+  transition: all 0.3s ease;
+}
+
+.kidopia-input-group:focus-within,
+.kidopia-otp-wrap:focus-within {
+  border-color: var(--green-dark);
+  box-shadow: 0 0 0 3px rgba(141, 198, 63, 0.1);
+  transform: translateY(-2px);
+}
+
+.kidopia-input-group span {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-right: 8px;
+}
+
+.kidopia-input-group input,
+.kidopia-otp-wrap input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: var(--text-dark);
+  background: transparent;
+}
+
+.kidopia-input-group input::placeholder,
+.kidopia-otp-wrap input::placeholder {
+  color: #a0a0a0;
+}
+
+.kidopia-otp-wrap button {
+  background: none;
+  border: none;
+  color: var(--primary-green);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-size: 8px;
+}
+
+.kidopia-otp-wrap button:hover:not(:disabled) {
+  background: rgba(141, 198, 63, 0.1);
+  transform: translateY(-1px);
+}
+
+.kidopia-otp-wrap button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ===== Loading Text Animation ===== */
+.loading-text::after {
+  content: '...';
+  display: inline-block;
+  animation: dots 1s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: ''; }
+  40% { content: '.'; }
+  60% { content: '..'; }
+  80%, 100% { content: '...'; }
+}
+
+
+/* ===== Messages ===== */
+.kidopia-message {
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-align: center;
+  padding: 12px;
+  border-radius: var(--radius);
+  font-weight: 500;
+}
+
+.kidopia-error {
+  background: #fee;
+  color: #d32f2f;
+  border: 1px solid #f5c6cb;
+}
+
+.kidopia-success {
+  background: #f0fff4;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+/* ===== Consent ===== */
+.kidopia-consent-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+  font-size: 14px;
+  color: var(--text-light);
+  text-align: left;
+  line-height: 1.4;
+}
+
+.kidopia-consent-line input[type="checkbox"] {
+  margin-top: 2px;
+  accent-color: var(--primary-green);
+  transform: scale(1.2);
+}
+
+.consent {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+.consent-text {
+  color: #000000; /* black */
+  font-weight: 600; /* bold */
+}
+
+.consent:hover {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+
+/* ===== Buttons ===== */
+.kidopia-btn-login {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--green-dark) 100%);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kidopia-btn-login:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.kidopia-btn-login:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.kidopia-freeTrial {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-top: 16px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ===== Footer ===== */
+.kidopia-footer {
+  background: #2c2c2c;
+  color: var(--primary-green);
+  padding: 24px 0;
+}
+
+.kidopia-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.kidopia-foot-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.kidopia-foot-links a {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+}
+
+.kidopia-foot-links a:hover {
+  color: var(--green-light);
+  transform: translateY(-1px);
+}
+
+.otp-input {
+  width: 100%;
+  padding: 5px 12px;
+  font-size: 1rem;
+}
+
+.otp-send-btn.disabled {
+  cursor: not-allowed;
+}
+
+
+/* ===== Responsive Design ===== */
+@media (max-width: 968px) {
+  .kidopia-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+  
+  .kidopia-hero-left {
+    order: 2;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .kidopia-card {
+    order: 1;
+    max-width: 450px;
+  }
+  
+  .kidopia-hero-left img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .kidopia-container {
+    padding: 0 16px;
+  }
+  
+  .kidopia-topbar-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .kidopia-hero {
+    padding: 20px 0;
+  }
+  
+  .kidopia-card-inner {
+    padding: 20px;
+  }
+  
+  .kidopia-input-group,
+  .kidopia-otp-wrap {
+    padding: 10px 12px;
+  }
+  
+  .kidopia-footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .kidopia-foot-links {
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .kidopia-consent-line {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kidopia-lang-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  
+  .kidopia-input-group span {
+    font-size: 14px;
+  }
+  
+  .kidopia-input-group input,
+  .kidopia-otp-wrap input {
+    font-size: 14px;
+  }
+  
+  .kidopia-otp-wrap {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  
+  .kidopia-otp-wrap button {
+    align-self: flex-end;
+    padding: 6px 12px;
+  }
+}
+
+/* ===== Accessibility ===== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .kidopia-hero-left img {
+    animation: none;
+  }
+}
+

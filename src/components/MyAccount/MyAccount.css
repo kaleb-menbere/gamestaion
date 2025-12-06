@@ -1,0 +1,98 @@
+/* Container */
+.account-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(to right, #1E90FF, #1E90FF);
+    padding: 20px;
+  }
+  
+  /* Card */
+  .account-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Header */
+  .account-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Info rows */
+  .account-info {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .account-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .value {
+    font-weight: 500;
+    color: #111;
+  }
+  
+  .status.active {
+    color: green;
+    font-weight: 700;
+  }
+  
+  .status.inactive {
+    color: red;
+    font-weight: 700;
+  }
+  
+  /* Buttons */
+  .account-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .btn {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn.back {
+    background: #e0e0e0;
+    color: #333;
+  }
+  
+  .btn.back:hover {
+    background: #cfcfcf;
+  }
+  
+  .btn.unsubscribe {
+    background: #ff4d4f;
+    color: white;
+  }
+  
+  .btn.unsubscribe:hover {
+    background: #e04344;
+  }
+  
