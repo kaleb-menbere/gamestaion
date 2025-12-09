@@ -39,16 +39,16 @@ export const LanguageProvider = ({ children }) => {
       logout: "Logout",
       languageToggle: "En | አማርኛ",
       heroTitle: "YOUR ULTIMATE DESTINATION FOR ONLINE GAMING",
-      heroDescription: "Experience the ultimate gaming universe with KIDOPIA, featuring 100+ high quality, premium HTML5 games featuring Action, reflex, Sports and Adventure Enthusiasts.",
+      heroDescription: "Experience the ultimate gaming universe with GAME STATION, featuring 100+ high quality, premium HTML5 games featuring Action, reflex, Sports and Adventure Enthusiasts.",
       playNow: "Play Now",
       about: "About Us",
-      aboutKidopia: "ABOUT KIDOPIA ----",
-      aboutTitle: "EXPERIENCE NEXT-LEVEL ENTERTAINMENT WITH KIDOPIA – YOUR ULTIMATE PREMIUM HTML5 GAMING PORTAL.",
-      aboutDescription: "Play hundreds of top-tier games instantly, no downloads, no delays, just pure enjoyment. Fast, elegant, and compatible with any device, KIDOPIA transforms every moment into a gaming adventure.",
-      copyright: "© ETHIO TELECOM KIDOPIA 2025, ALL RIGHTS RESERVED",
+      aboutKidopia: "ABOUT GAME STATION ----",
+      aboutTitle: "EXPERIENCE NEXT-LEVEL ENTERTAINMENT WITH GAME STATION – YOUR ULTIMATE PREMIUM HTML5 GAMING PORTAL.",
+      aboutDescription: "Play hundreds of top-tier games instantly, no downloads, no delays, just pure enjoyment. Fast, elegant, and compatible with any device, GAME STATION transforms every moment into a gaming adventure.",
+      copyright: "© ETHIO TELECOM GAME STATION 2025, ALL RIGHTS RESERVED",
       // Updated Terms and Conditions from Excel
       termsTitle: "Terms and Conditions",
-      termsDescription: "Welcome to Kidopia Terms and Condition!",
+      termsDescription: "Welcome to GAME STATION Terms and Condition!",
 
       welcomeTitle: "1. Introduction",
       welcomeContent: "These Terms and Condition govern your use of our website and services provided by Vision Tech One member PLC (\"we,\" \"us,\" or \"our\") available at https://kidopia.et/Drr/ethtelco/login.php. By using our Services, you agree to comply with these Terms and Condition. Please read them carefully.",
@@ -78,10 +78,10 @@ export const LanguageProvider = ({ children }) => {
 
       contactInfoTitle: "6. Contact Information",
       contactInfoContent: "If you have any questions or concerns related to our Services contact; Support@kidopia.et",
-      closingMessage: "Thank you for using Kidopia!",
+      closingMessage: "Thank you for using GAME STATION!",
       // Footer
       termsConditions: "Terms & Conditions",
-      welcome: "WELCOME TO KIDOPIA",
+      welcome: "WELCOME TO GAME STATION",
       login: "Login",
       send_code: "SEND CODE",
       resend_code: "RE-SEND CODE",
@@ -139,18 +139,18 @@ export const LanguageProvider = ({ children }) => {
       logout: "ውጣ",
       languageToggle: "En | አማርኛ",
       heroTitle: "ለኦንላይን ጨዋታዎች የመጨረሻ መድረሻዎ",
-      heroDescription: "ከ 100 በላይ የ Android እና HTML አስደሳች እና አስቂኝ ጨዋታዎች በአንድ ቦታ በ Kidopia የጨዋታ አለም ያግኙ።",
+      heroDescription: "ከ 100 በላይ የ Android እና HTML አስደሳች እና አስቂኝ ጨዋታዎች በአንድ ቦታ በ GAME STATION የጨዋታ አለም ያግኙ።",
       playNow: "አሁኑኑ ይጫወቱ",
       about: "ስለ እኛ",
       aboutKidopia: "ስለ ኪዶፒያ ----",
-      aboutTitle: "የቀጣይ ደረጃ መዝናኛን ከKIDOPIA ጋር ይለማመዱ - የእርስዎ የመጨረሻው ፕሪሚየም HTML5 ጨዋታ መግቢያ።",
+      aboutTitle: "የቀጣይ ደረጃ መዝናኛን ከGAME STATION ጋር ይለማመዱ - የእርስዎ የመጨረሻው ፕሪሚየም HTML5 ጨዋታ መግቢያ።",
       aboutDescription: "አዝናኝ አስተማሪ እንዲሁም አንድ ደረጃ ከፍ ያለ ከ100 በላይ ጌሞች ከ ኪዶፒያ ቀርቦሎታል፡፡ ጌሞቹን ማውረድ ሳይጠበቅቦት በቀጥታ ከፍጥነት ጋር በስልኮ፡ በላፕቶፖ እና በታብሌቶ ይዝናኑ፡፡",
       privacyPolicy: "የግለሰቦች ፖሊሲ",
       faq: "FAQ", // You can add Amharic translation if needed
-      copyright: "© ኢትዮ ቴሌኮም KIDOPIA 2025፣ መብቱ በህግ የተጠበቀ ነው።",
+      copyright: "© ኢትዮ ቴሌኮም GAME STATION 2025፣ መብቱ በህግ የተጠበቀ ነው።",
       // Updated Terms and Conditions from Excel (Amharic)
       termsTitle: "ውሎች እና ሁኔታዎች",
-      termsDescription: "እንኳን ወደ Kidopia ውሎች እና ሁኔታዎች በደህና መጡ፡፡",
+      termsDescription: "እንኳን ወደ GAME STATION ውሎች እና ሁኔታዎች በደህና መጡ፡፡",
 
       welcomeTitle: "1. መግቢያ",
       welcomeContent: "እነዚህ የአገልግሎት ውሎች እና ሁኔታዎች ለእርስዎ በ Vision Tech One member PLC አማካኝነት የቀረበውን አገልግሎት የምትጠቀሙበትን ሁኔታ ይመራል ፡፡ ይህንንም በ፡ https://kidopia.et/Drr/ethtelco/login.php ላይ ማግኘት ትችላላችሁ ፡፡ የእኛን አገልግሎቶች በመጠቀም እነዚህን ውሎች እና ሁኔታዎች ለመከተል ተስማምተዋል ፡፡ እባክዎትን በጥንቃቄ ያንብቡአቸው ፡፡",
@@ -181,11 +181,11 @@ export const LanguageProvider = ({ children }) => {
       contactInfoTitle: "6. የግንኙነት መረጃ",
       contactInfoContent: "ከአገልግሎቶቻችን ጋር በተያያዘ ለሚነሱ ጥያቄዎች እንዲሁም ተጨማሪ መረጃ በ Support@kidopia.et ያግኙናል።",
 
-      closingMessage: "Kidopiaን ስለተጠቀሙ እናመሰግናለን።",
+      closingMessage: "GAME STATIONን ስለተጠቀሙ እናመሰግናለን።",
 
       // Footer
       termsConditions: "ውሎች እና ሁኔታዎች",
-      welcome: "እንኳን ወደ Kidopia በደህና መጡ",
+      welcome: "እንኳን ወደ GAME STATION በደህና መጡ",
       login: "ለመመዝገብ",
       send_code: "ኦቲፒ ላክ",
       resend_code: "ኦቲፒ ድጋሚ ላክ",
