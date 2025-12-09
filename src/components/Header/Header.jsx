@@ -95,9 +95,7 @@ function Header() {
               <span className="dropbtn links">{t('gameCategory')} ▾</span>
               <div className="dropdown-content">
                 <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/adventure">{t('adventureGames')}</NavLink>
-                <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/education">{t('educationGames')}</NavLink>
                 <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/puzzle">{t('puzzleGames')}</NavLink>
-                <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/reflex">{t('reflexGames')}</NavLink>
                 <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/sports">{t('sportsGames')}</NavLink>
               </div>
             </div>
@@ -138,9 +136,7 @@ function Header() {
           </button>
           <div className={`mobile-dropdown-content ${isDropdownOpen ? 'open' : ''}`}>
             <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/adventure" onClick={closeMobileMenu}>{t('adventureGames')}</NavLink>
-            <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/education" onClick={closeMobileMenu}>{t('educationGames')}</NavLink>
             <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/puzzle" onClick={closeMobileMenu}>{t('puzzleGames')}</NavLink>
-            <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/reflex" onClick={closeMobileMenu}>{t('reflexGames')}</NavLink>
             <NavLink className={({ isActive }) => `categorys ${isActive ? 'active' : ''}`} to="/category/sports" onClick={closeMobileMenu}>{t('sportsGames')}</NavLink>
           </div>
           

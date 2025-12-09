@@ -8,11 +8,9 @@ function Home() {
         <div>
 
             <Hero />
-            {/* <Box categoryName="adventure" index={0} />
+            <Box categoryName="adventure" index={0} />
             <Box categoryName="puzzle" index={1} />
-            <Box categoryName="education" index={2} />
-            <Box categoryName="reflex" index={3} />
-            <Box categoryName="sports" index={4} /> */}
+            <Box categoryName="sports" index={2} />
         </div>
     )
 }
